@@ -21,7 +21,7 @@
                     partials: ["REACTION"]
                 });
 
-                await s4d.client.login('MTA0MTI5NTI1NTg4ODIwNzkzMw.G7UK5c.AD3ctpDXL5RiI0nHdLMJyotX5HCH-_NWGEZx5s').catch((e) => { s4d.tokenInvalid = true; s4d.tokenError = e; });
+                await s4d.client.login(process.emv.token).catch((e) => { s4d.tokenInvalid = true; s4d.tokenError = e; });
 
 s4d.client.on('guildMemberAdd', async (param1) => {
 s4d.joiningMember = param1;
