@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_login" id="!_E%gn2#K*CAT;cY_%xF" x="453" y="127">
+    <value name="TOKEN">
+      <block type="text" id="U4~j4.GQ|,PMKQ-OuaJI">
+        <field name="TEXT">MTA0MTI5NTI1NTg4ODIwNzkzMw.G7UK5c.AD3ctpDXL5RiI0nHdLMJyotX5HCH-_NWGEZx5s</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_member_join" id="u0L~*fmObnYp$HEj$2!6" x="454" y="212">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="(](bcawX%xiy3{QGf2=4">
+        <value name="IF0">
+          <block type="logic_compare" id="M6=FY,)6E;k=+KCe|@F^">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="=|KQGZHgmMO}08U276O8"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="7v5C6M6oWU/HJuVlZZVw">
+                <field name="TEXT">!ping</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id="v592O:$FHxry#U*f3oRm">
+            <value name="CONTENT">
+              <shadow type="text" id="ZI.$*Z]I8Klt3hx,}kad">
+                <field name="TEXT">pong!</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
